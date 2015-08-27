@@ -11,4 +11,4 @@ Rails Recipes App.
 * PostgreSQL Database
 * [Cloud9 IDE] (https://c9.io/)
 * [Bootstrap SASS] (https://github.com/twbs/bootstrap-sass)
-* Deployed on [Heroku] (https://www.heroku.com/)
+* Deployed with [Heroku] (https://www.heroku.com/)
