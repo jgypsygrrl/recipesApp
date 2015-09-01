@@ -19,6 +19,6 @@ email: string
 - chefname must be present
 - chefname must be between 3 characters and less than 40 characters
 - email must be present
-- email must be unique 
+- email must be unique (used in logins)
 - email must be valid
 
