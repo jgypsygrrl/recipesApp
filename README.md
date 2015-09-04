@@ -12,3 +12,4 @@ Rails Recipes App.
 * [Cloud9 IDE] (https://c9.io/)
 * [Bootstrap SASS] (https://github.com/twbs/bootstrap-sass)
 * Deployed with [Heroku] (https://www.heroku.com/)
+* Gravatar
