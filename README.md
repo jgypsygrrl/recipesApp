@@ -13,3 +13,5 @@ Rails Recipes App.
 * [Bootstrap SASS] (https://github.com/twbs/bootstrap-sass)
 * Deployed with [Heroku] (https://www.heroku.com/)
 * Gravatar
+* Authentication & Authorization using [bcrypt-ruby] (http://bcrypt-ruby.rubyforge.org/)
+* [Will paginate gem] (https://github.com/mislav/will_paginate)
