@@ -1,5 +1,9 @@
 class ChefsController < ApplicationController
   
+  def index
+    @chefs = Chef.paginate(page: params[:page], per_page: 3)
+  end
+  
   def new
     @chef = Chef.new
   end
@@ -22,7 +26,7 @@ class ChefsController < ApplicationController
     @chef = Chef.find(params[:id])
     if @chef.update(chef_params)
       flash[:success] = "Your account has been updated successfully"
-      redirect_to recipes_path #TODO temporary until create chef 'show' page
+      redirect_to chef_path 
     else
       render 'edit'
     end
