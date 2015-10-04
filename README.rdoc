@@ -57,3 +57,6 @@ MANY TO MANY ASSOCIATION:
 - Implement using has_many through association
 - Requires a join table
 - One object/row in one table can be associated with multiple rows in a 2nd table and vise-versa
+
+
+ADD ADMIN FUNCTIONALITY
