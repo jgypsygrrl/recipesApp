@@ -3,7 +3,7 @@ require 'test_helper'
 class ChefTest < ActiveSupport::TestCase
 
   def setup
-    @chef = Chef.new(chefname: "John", email: "john@email.com")
+    @chef = Chef.new(chefname: "John", bio: "I love cooking!", email: "john@email.com")
   end
   
   test "Chef should be valid" do
@@ -25,6 +25,21 @@ class ChefTest < ActiveSupport::TestCase
     assert_not @chef.valid?
   end
   
+  test "Chef bio must be present" do
+    @chef.bio = " " 
+    assert_not @chef.valid?
+  end
+    
+  test "Chef bio should not be too short" do
+    @chef.bio = "aa"
+    assert_not @chef.valid?
+  end
+  
+  test "Chef bio should not be too long" do
+    @chef.bio = "a" * 201
+    assert_not @chef.valid?
+  end
+    
   test "Email must be present" do
     @chef.email = " "
     assert_not @chef.valid?
