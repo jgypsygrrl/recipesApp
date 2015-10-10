@@ -2,7 +2,14 @@
 
 ### Overview
 
-Rails Recipes App.
+Rails Recipes Sharing App.
+
+Logged in user (chef) can add, edit and delete their recipe(s).
+Logged in user (chef) can vote on any recipe.  Allowed only one vote per recipe.
+Admin can edit and delete recipes.
+Everyone can view all recipes / chefs.
+This app utilizes Gravatar as user's personal photo.
+
 
 ### Technologies Used
 
@@ -11,8 +18,8 @@ Rails Recipes App.
 * PostgreSQL Database
 * [Cloud9 IDE] (https://c9.io/)
 * [Bootstrap SASS] (https://github.com/twbs/bootstrap-sass)
-* Deployed with [Heroku] (https://www.heroku.com/) and [Amazon Web Services] (https://aws.amazon.com/) for image storage
+* Deployed with [Heroku] (https://www.heroku.com/) 
+* [Fog gem] (https://github.com/fog/fog) used for [cloud storage] (https://aws.amazon.com/)
 * Gravatar
 * Authentication & Authorization using [bcrypt-ruby] (http://bcrypt-ruby.rubyforge.org/)
 * [Will paginate gem] (https://github.com/mislav/will_paginate)
-* [Fog gem] (https://github.com/fog/fog) for cloud storage
